@@ -47,7 +47,7 @@ def list_songs_by_genre
 end
 
 def play_song
-  puts "Please enter the name of a genre:"
+  puts "Which song number would you like to play?"
   song = gets.strip
 end
 
