@@ -49,7 +49,7 @@ end
 def play_song
   puts "Which song number would you like to play?"
   song = gets.strip
-  puts "Playing #{song.name} by #{song.artist}"
+  puts "Playing #{song} by #{song}"
 end
 
 end
