@@ -74,7 +74,7 @@ end
 
 def play_song
   puts "Which song number would you like to play?"
-  song = gets.strip.to_i+1
+  song = gets.strip.to_i
   library_length = Song.all.count
 
   if (song >= 1 && song <= library_length)
