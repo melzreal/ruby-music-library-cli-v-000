@@ -43,7 +43,7 @@ def list_songs_by_artist
     if !martist.nil?
       martist.list_songs
     end
-
+    binding.pry
 end
 
 def list_songs_by_genre
