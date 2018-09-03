@@ -48,9 +48,11 @@ end
 
 def list_songs_by_genre
   puts "Please enter the name of a genre:"
-  genre = gets.chomp
-
-
+  name = gets.strip
+  genre = Genre.find_by_name(name)
+  if !genre.nil?
+    artist.songs.sort_by {|song| song.name}.each_with_index {|element, i| puts "#{i+1}. #{element.name} - #{element.genre.name}"}
+  end
 end
 
 def play_song
