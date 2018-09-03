@@ -59,8 +59,9 @@ def play_song
   puts "Which song number would you like to play?"
   song = gets.strip.to_i
   library_length = Song.all.count
+  nsong = list_songs.detect{|i, artist| i == song}
+
   if (song >= 1 && song <= library_length)
-    nsong = list_songs.detect{|i, artist| i == song}
     puts "Playing #{nsong.name} by #{nsong.artist}"
   end
 end
