@@ -60,7 +60,7 @@ def play_song
   song = gets.strip.to_i
   library_length = Song.all.count
   if (song >= 1 && song <= library_length)
-    nsong = list_songs.map{|i, artist| i == song}
+    nsong = list_songs.detect{|i, artist| i == song}
     puts "Playing #{nsong.name} by #{nsong.artist}"
   end
 end
