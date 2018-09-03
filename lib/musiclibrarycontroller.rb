@@ -42,7 +42,6 @@ attr_accessor :path, :musicimporter
 
 def list_songs
   Song.all.sort_by{|s| s.name}.each_with_index {|a, i| puts "#{i+1}. #{a.artist.name} - #{a.name} - #{a.genre.name}"}
-
 end
 
 def list_artists
@@ -74,7 +73,7 @@ end
 
 def play_song
   puts "Which song number would you like to play?"
-  song = gets.strip.to_i
+  song = gets.strip.to_i-1
   library_length = Song.all.count
 
   if (song >= 1 && song <= library_length)
