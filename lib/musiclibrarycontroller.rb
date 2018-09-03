@@ -21,6 +21,7 @@ attr_accessor :path, :musicimporter
 
   input = ''
   while input !== "exit"
+  input = gets.strip
   case input
     when "list songs"
       list_songs
@@ -35,9 +36,7 @@ attr_accessor :path, :musicimporter
     when "play song"
       play_song
     end
-  #ends case
-  input = gets.strip
-  end
+  end 
 
  end
 
