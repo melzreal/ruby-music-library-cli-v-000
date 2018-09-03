@@ -58,7 +58,7 @@ end
 def play_song
   puts "Which song number would you like to play?"
   song = gets.strip.to_i
-  library_length = list_songs.length
+  library_length = list_songs.size
 
   if (song >= 1 && song <= library_length)
     puts "Playing #{song} by #{song}"
