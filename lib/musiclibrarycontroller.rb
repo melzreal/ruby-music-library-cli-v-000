@@ -45,7 +45,7 @@ end
 def list_songs_by_genre
   genre = gets.chomp
   puts "Please enter the name of a genre:"
-  binding.pry
+
 
 end
 
@@ -53,6 +53,7 @@ def play_song
   song = gets.strip.to_i
   puts "Which song number would you like to play?"
   puts "Playing #{song} by #{song}"
+    binding.pry
 end
 
 end
