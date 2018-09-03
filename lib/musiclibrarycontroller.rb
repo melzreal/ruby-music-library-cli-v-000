@@ -56,10 +56,10 @@ def list_songs_by_genre
 end
 
 def play_song
-  song = gets.strip.to_i
   puts "Which song number would you like to play?"
+  song = gets.strip.to_i
   puts "Playing #{song} by #{song}"
-  #  binding.pry
+  
 end
 
 end
