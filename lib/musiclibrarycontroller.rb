@@ -19,7 +19,8 @@ attr_accessor :path, :musicimporter
    puts "To quit, type 'exit'."
    puts "What would you like to do?"
 
-  input = gets.strip
+  input = ''
+  while input !== "exit"
   case input
     when "list songs"
       list_songs
@@ -35,8 +36,7 @@ attr_accessor :path, :musicimporter
       play_song
     end
   #ends case
-  until input == "exit"
-     input = gets.strip
+  input = gets.strip
   end
 
  end
