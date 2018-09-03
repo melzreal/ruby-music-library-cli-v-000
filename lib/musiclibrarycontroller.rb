@@ -38,13 +38,13 @@ end
 
 def list_songs_by_artist
   puts "Please enter the name of an artist:"
-  artist = gets.strip
+  artist = gets.chomp
 
 end
 
 def list_songs_by_genre
   puts "Please enter the name of a genre:"
-  genre = gets.strip
+  genre = gets.chomp
   binding.pry
 
 end
