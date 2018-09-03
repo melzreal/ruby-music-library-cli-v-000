@@ -39,7 +39,7 @@ end
 def list_songs_by_artist
   artist = gets.chomp
   puts "Please enter the name of an artist:"
-  find_by_name(artist) 
+  find_by_name(artist)
 
 end
 
@@ -54,7 +54,7 @@ def play_song
   song = gets.strip.to_i
   puts "Which song number would you like to play?"
   puts "Playing #{song} by #{song}"
-    binding.pry
+  #  binding.pry
 end
 
 end
