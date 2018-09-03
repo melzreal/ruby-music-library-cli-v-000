@@ -41,7 +41,7 @@ def list_songs_by_artist
   puts "Please enter the name of an artist:"
   martist = Artist.find_by_name(artist)
     if !martist.nil?
-      martist.list_artists
+      martist.list_songs
     end
 
 end
