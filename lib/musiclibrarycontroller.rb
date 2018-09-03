@@ -74,8 +74,8 @@ end
 
 def play_song
   puts "Which song number would you like to play?"
-  song = gets.strip.to_i-1
-  
+  song = gets.strip.to_i+1
+
   library_length = Song.all.count
 
   msong = Song.all.sort {|a, b| a.name <=> b.name}[song]
