@@ -57,11 +57,13 @@ end
 
 def play_song
   puts "Which song number would you like to play?"
-  song = gets.strip.to_i
+  song = gets.strip.to_i-1
   library_length = Song.all.count
-  
+
   if (song >= 1 && song <= library_length)
-    puts "Playing #{song.name} by #{song.artist.name}"
+    msong = Song.all.sort {|a, b| a.name <=> b.name}[song]
+      
+    puts "Playing #{msong.name} by #{msong.artist.name}"
   end
 end
 
