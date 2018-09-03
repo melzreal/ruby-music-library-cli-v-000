@@ -41,9 +41,9 @@ def list_songs_by_artist
   name = gets.strip
   artist = Artist.find_by_name(name)
   if !artist.nil?
-    artist.songs.sort_by {|song| song.name}.each_with_index {|element, index| puts "#{index+1}. #{element.name} - #{element.genre.name}"}
+    artist.songs.sort_by {|song| song.name}.each_with_index {|element, i| puts "#{i+1}. #{element.name} - #{element.genre.name}"}
   end
-  
+
 end
 
 def list_songs_by_genre
