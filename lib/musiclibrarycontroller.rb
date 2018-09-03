@@ -65,7 +65,6 @@ def play_song
     puts "Playing #{msong.name} by #{msong.artist.name}" unless msong.nil?
   end
 
-  binding.pry
 end
 
 
