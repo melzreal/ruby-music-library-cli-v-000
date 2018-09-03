@@ -47,8 +47,8 @@ def list_songs_by_artist
 end
 
 def list_songs_by_genre
-  genre = gets.chomp
   puts "Please enter the name of a genre:"
+  genre = gets.chomp
 
 
 end
