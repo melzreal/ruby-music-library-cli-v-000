@@ -39,7 +39,7 @@ end
 def list_songs_by_artist
   artist = gets.chomp
   puts "Please enter the name of an artist:"
-  martist = Artist.find_by_name(artist)
+  martist = Artist.find_or_create_by_name(artist)
     if martist
       martist.list_songs
     end
