@@ -78,7 +78,7 @@ def play_song
   library_length = Song.all.count
 
   msong = Song.all.sort {|a, b| a.name <=> b.name}[song]
-  if (song >= 1 && song <= library_length) && !msong.nil?    
+  if (song >= 1 && song <= library_length) && !msong.nil?
       puts "Playing #{msong.name} by #{msong.artist.name}"
   end
 
