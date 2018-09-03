@@ -37,14 +37,14 @@ def list_genres
 end
 
 def list_songs_by_artist
-  puts "Please enter the name of an artist:"
   artist = gets.chomp
+  puts "Please enter the name of an artist:"
 
 end
 
 def list_songs_by_genre
-  puts "Please enter the name of a genre:"
   genre = gets.chomp
+  puts "Please enter the name of a genre:"
   binding.pry
 
 end
