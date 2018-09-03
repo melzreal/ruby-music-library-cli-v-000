@@ -80,9 +80,9 @@ def play_song
   if (song >= 1 && song <= library_length)
     msong = Song.all.sort {|a, b| a.name <=> b.name}[song]
     if !msong.nil?
-    puts "Playing #{msong.name} by #{msong.artist.name}"
+      puts "Playing #{msong.name} by #{msong.artist.name}"
     end
-  ed
+  end
 
 end
 
