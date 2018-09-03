@@ -38,18 +38,12 @@ end
 
 def list_songs_by_artist
   puts "Please enter the name of an artist:"
-  
   name = gets.strip
   artist = Artist.find_by_name(name)
   if !artist.nil?
     artist.songs.sort_by {|song| song.name}.each_with_index {|element, index| puts "#{index+1}. #{element.name} - #{element.genre.name}"}
   end
-  #martist = Artist.find_by_name(art)
-  #  if !martist.nil?
-  #    martist.list_songs
-  #  end
-
-  #binding.pry
+  
 end
 
 def list_songs_by_genre
