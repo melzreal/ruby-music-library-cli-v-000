@@ -38,8 +38,8 @@ end
 
 def list_songs_by_artist
   puts "Please enter the name of an artist:"
-  artist = gets.strip
-  martist = Artist.find_by_name(artist)
+  art = gets.strip
+  martist = Artist.find_by_name(art)
     if !martist.nil?
       martist.list_songs
     end
