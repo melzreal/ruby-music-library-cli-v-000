@@ -30,6 +30,7 @@ end
 
 def list_artists
   Artist.all.sort_by{|a| a.name}.each_with_index {|a, i| puts "#{i+1}. #{a.name}"}
+  binding.pry
 end
 
 def list_genres
@@ -39,7 +40,7 @@ end
 def list_songs_by_artist
   puts "Please enter the name of an artist:"
   artist = gets.strip
-  binding.pry
+  
 end
 
 def list_songs_by_genre
