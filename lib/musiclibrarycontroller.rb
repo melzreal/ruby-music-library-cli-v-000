@@ -42,8 +42,8 @@ attr_accessor :path, :musicimporter
  end
 
 def list_songs
-  Song.all.sort_by{|s| s.name}.each_with_index {|a, i| puts "#{i+1}. #{a.artist.name} - #{a.name} - #{a.genre.name}"}
-  binding.pry
+  Song.all.sort_by!{|s| s.name}.each_with_index {|a, i| puts "#{i+1}. #{a.artist.name} - #{a.name} - #{a.genre.name}"}
+
 end
 
 def list_artists
